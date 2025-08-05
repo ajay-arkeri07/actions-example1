@@ -7,13 +7,13 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - name: Welcome message
-          run : echo "my first example jobf first"
+          run: echo "my first example jobf first"
         
         - name: checkout the code
           uses: actions/checkout@v4
 
         - name: list files
-          run : ls
+          run: ls
 
         - name: cat Readme
-          run : cat README.md
+          run: cat README.md
