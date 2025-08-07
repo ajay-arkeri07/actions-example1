@@ -10,7 +10,7 @@ jobs:
             uses: actions/checkout@v4
           
           - name: Welcome message
-            run: |
+            run: | 
               echo "my first example jobf first"
               ls -a
               cat README.md
