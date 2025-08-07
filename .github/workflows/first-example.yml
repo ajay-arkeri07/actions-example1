@@ -15,4 +15,7 @@ jobs:
               ls -a
               cat README.md
           
+          - name: Generate ASCII Artwork
+            run : cowsay -f tux "Hello i am a penguin " >> penguin.txt
+          
     
