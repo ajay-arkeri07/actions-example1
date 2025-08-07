@@ -16,6 +16,9 @@ jobs:
               cat README.md
           
           - name: Generate ASCII Artwork
-            run : cowsay -f tux "Hello i am a penguin " >> penguin.txt
+            run : |
+                sudo apt update
+                sudo apt install cowsay
+                cowsay -f tux "Hello i am a penguin " >> penguin.txt
           
     
