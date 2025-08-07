@@ -20,5 +20,13 @@ jobs:
                 sudo apt update
                 sudo apt install cowsay
                 cowsay -f tux "Hello i am a penguin " >> penguin.txt
+                cat penguin.txt
+          
+          - name: upload artifact
+            uses: actions/upload-artifact@v4
+            with:
+              name: penguin-art
+              path: penguin.txt
+
           
     
